@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+ <h> This is a test API call </h>
  <body>
   <script>
  
@@ -13,7 +14,7 @@
  
    return resp.json();
   }
- 
+  alert("starting api request")
   myPost();
   postData().then((d) => { alert(d.message) });
 
