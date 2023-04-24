@@ -13,23 +13,18 @@
  <p> Welcome to the test site </p>
  <body>
   <script>
- /*
+ 
   function myPost(){
    var postData = async () => {
      const data = {title: "one",post: "two"};
-     const resp = await fetch("../pages/api/myapi.js", {
-       method: "POST",
-       body: JSON.stringify(data),
-      };
-     )
- 
-   return resp.json();
-  }
+     const resp = await fetch("../pages/api/myapi.js", {method: "POST",body: JSON.stringify(data)} )
+     return resp.json();
+    }
+   }
   alert("starting api request")
-   myPost();
-  postData().then((d) => { alert(d.message) }); */
-   
-  alert("starting api request...")
+  myPost();
+  postData().then((d) => { alert(d.message) });
+  
 
   </script>
  </body>
