@@ -18,12 +18,17 @@
   function myPost(){
    var postData = async () => {
      const resp = await fetch("../pages/api/myapi" )
-     return resp.json();
+     .then(response => response.json())
+     .then(alert(response.message))
     }
    }
   alert("starting api request")
   myPost();
-  postData().then((d) => { alert(d.message) });
+  
+  setTimeout(ending,5000)
+  function ending(){
+   alert("finished")
+  }
   
 
   </script>
