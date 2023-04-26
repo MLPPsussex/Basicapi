@@ -17,7 +17,7 @@
  
   function myPost(){
    var postData = async () => {
-     const resp = await fetch("../pages/api/myapi" )
+     const response = await fetch("../pages/api/myapi" )
      .then(response => response.json())
      .then(alert(response.message))
     }
