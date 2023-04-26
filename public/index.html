@@ -17,7 +17,7 @@
  
   function myPost(){
    var postData = async () => {
-     const response = await fetch("/api/myapi" )
+     const response = await fetch("https://mynextjs-eight.vercel.app/api/myapi" )
      .then(response => response.json())
      .then(alert(response.message))
     }
