@@ -17,8 +17,7 @@
  
   function myPost(){
    var postData = async () => {
-     const data = {title: "one",post: "two"};
-     const resp = await fetch("../pages/api/myapi.js", {method: "POST",body: JSON.stringify(data)} )
+     const resp = await fetch("../pages/api/myapi" )
      return resp.json();
     }
    }
