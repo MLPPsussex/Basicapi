@@ -16,12 +16,10 @@
   <script>
  
   function myPost(){
-   var re
-   var postData = async () => {
      const response = await fetch("https://basicapi.app/api/myapi" )
      .then(response => response.json())
      .then(alert("1"+response.message))
-    }
+    
    }
   alert("starting api request")
   myPost();
