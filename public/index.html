@@ -18,10 +18,9 @@
   function myPost(){
    var re
    var postData = async () => {
-     const response = await fetch("https://mynextjs-eight.vercel.app/api/myapi", re )
-   //  .then(response => response.json())
+     const response = await fetch("https://basicapi.app/api/myapi" )
+     .then(response => response.json())
      .then(alert("1"+response.message))
-     .then(alert("2"+re) )
     }
    }
   alert("starting api request")
