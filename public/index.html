@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5402157648793030"
-     crossorigin="anonymous"></script>
- </head>
+
  <font size="+2">BASIC VERCEL APP</font>
  <br>
  <font size="+3">Hello World</font>
@@ -14,13 +11,11 @@
  <p> Welcome to the test site </p>
  <body>
   <script>
- 
-     alert("starting api request")
    
 
      fetch("https://basicapi.vercel.app/api/myapi" )
      .then(response => response.json())
-     .then(alert("1"+response.message))
+     .then(alert(response.message))
     
 
 
