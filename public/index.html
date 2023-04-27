@@ -8,7 +8,7 @@
  <h> This is an app with a test API call </h>
  <br>
  <br>
- <p> Welcome to the test site </p>
+ <p> Welcome to test site </p>
  <body>
   <script>
    
@@ -18,7 +18,8 @@ function my(){
   method: 'POST', 
   body: "HelloW"
 }
-     fetch("https://basicapi.vercel.app/api/myapi",option )
+    // fetch("https://basicapi.vercel.app/api/myapi",option )
+  fetch("/api/myapi",option )
      .then(response => response.json())
      .then(response => alert(response.message))
 }   
