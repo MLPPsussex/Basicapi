@@ -8,7 +8,7 @@
 
  <body>
   <script>
-   var name=prompt("Please Enter Username")
+   var name
    
 function my(){
  
@@ -22,8 +22,12 @@ function my(){
      .then(response => alert(response.message))
 }   
 
-
- setTimeout(my,2000)
+function enter(){
+ name=prompt("Please Enter Username")
+ my()
+}
+   
+setTimeout(enter,1000)
 
 
   </script>
