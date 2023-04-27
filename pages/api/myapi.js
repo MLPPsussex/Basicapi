@@ -3,7 +3,13 @@ export default function handler(req, res) {
   const body = req.body
 //  switch (requestMethod) {
 //   case 'POST':
-      res.status(200).json({ message: `You submitted: ${body}` })
+  if(body=="Jeremy"){
+      res.status(200).json({ message: `You are logged in ${body}` })
+  }
+  else{
+   res.status(200).json({ message: `You do not have access` })
+  }
+   
 //  default:
 //      res.status(200).json({ message: 'not a Post'})
 //  }
