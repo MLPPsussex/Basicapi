@@ -3,7 +3,7 @@ export default function handler(req, res) {
   const body = req.body
 //  switch (requestMethod) {
 //   case 'POST':
-  if(body=="Jeremy"){
+  if(body=="JEREMY"){
       res.status(200).json({ message: `You are logged in ${body}` })
   }
   else{
