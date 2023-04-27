@@ -8,13 +8,13 @@
 
  <body>
   <script>
-   var name
+   var name, name2
    
 function my(){
  
  const option = {
   method: 'POST', 
-  body: name
+  body: name2
 }
     // fetch("https://basicapi.vercel.app/api/myapi",option )
   fetch("/api/myapi",option )
@@ -24,7 +24,7 @@ function my(){
 
 function enter(){
  name=prompt("Please Enter Username")
- name=name.toUpperCase()
+ name2=name.toUpperCase()
  my()
 }
    
