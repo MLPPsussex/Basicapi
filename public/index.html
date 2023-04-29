@@ -30,29 +30,12 @@ const options = {
   })
 };
 
-fetch('https://cloud.leonardo.ai/api/rest/v1/generations', options)
-  .then(response => response.json())
-  .then(response => console.log(response))
-  .catch(err => console.error(err));
 
 
 
 
 
-
-
-  const option1 = {
-  method: 'POST',
-  headers: {
-    accept: 'application/json',
-    'content-type': 'application/json',
-    authorization: `Bearer ${leoApiKey}`
-  },
-  body: JSON.stringify({prompt: promp,
-  modelId:"b820ea11-02bf-4652-97ae-9ac0cc00593d", width: dims, height: dims,
-  
-  scheduler: "LEONARDO", num_inference_steps: 30, sd_version: 'v2'})
-};
+ 
 leo=""
 fetch('https://cloud.leonardo.ai/api/rest/v1/generations', option1)
   .then(response => response.json())
