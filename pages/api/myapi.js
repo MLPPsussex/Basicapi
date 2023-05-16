@@ -13,7 +13,4 @@ export default function handler(req, res) {
    res.status(200).json({ message: 'fred' })
   }
    
-//  default:
-//      res.status(200).json({ message: 'not a Post'})
-//  }
 }
