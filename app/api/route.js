@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
  
-export async function GET() {
+export async function POST() {
   const data="This is a test"
  
   return NextResponse.json({ data });
