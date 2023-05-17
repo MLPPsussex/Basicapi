@@ -14,8 +14,8 @@ function my(){
   method: 'POST', 
   body: name2
 }
-    // fetch("https://basicapi.vercel.app/api/myapi",option )
-  fetch("/api/myapi",option )
+   
+  fetch("/api/route",option )
      .then(response => response.json())
      .then(response => alert(response.message))
 }   
