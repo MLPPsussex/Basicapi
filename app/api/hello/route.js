@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 var fs = require('fs');
  
-export async function POST() {
+export async function GET() {
   //const data="This is a test"
  
   var msg = fs.readFileSync("mydata.txt")
