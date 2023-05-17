@@ -1,18 +1,8 @@
- var fs = require('fs');
 export default function handler(req, res) {
-
- // const requestMethod = req.method;
-  const body = req.body
-//  switch (requestMethod) {
-//   case 'POST':
+  var myfile = require('fs');
+  var msg = myfile.readFileSync("mydata.txt")
   
-  var data1 = fs.readFileSync("mydata.txt")
-  data1=data1.length+" x12x"
-  if(body=="JEREMY"){
-      res.status(200).json({ message: `You are logged in ${body}` })
-  }
-  else{
-   res.status(200).json({ message: `1 ${data1}` })
-  }
+  if(req.body=="Me"){ res.status(200).json({ message: `Logged in` }) }
+  else{ res.status(200).json({ message: `Error ${msg}` })  }
    
 }
