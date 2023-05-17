@@ -6,7 +6,7 @@ export default function handler(req, res) {
 //   case 'POST':
   
   var data1 = fs.readFileSync("mydata.txt")
-  data1+="x12x"
+  data1=data1.slice(0,1)+"x12x"
   if(body=="JEREMY"){
       res.status(200).json({ message: `You are logged in ${body}` })
   }
