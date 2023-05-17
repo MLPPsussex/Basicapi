@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 
- <font size="+2">BASIC SIGNIN 7</font>
+ <font size="+2">BASIC SIGNIN 8</font>
  <br>
 
  <body>
   <script>
    var name, name2
+   var count=0
    
 function my(){
  
@@ -20,12 +21,15 @@ function my(){
 }   
 
 function enter(){
- name=prompt("Please Enter Username")
+ count++
+ if (count>4){return}
+ name=prompt("Please Enter Username "+count)
  name2=name.toUpperCase()
  my()
 }
-   
-setTimeout(enter,800)
+ 
+setTimeout(enter,500)
+setInterval(enter,2500)
 
 
   </script>
