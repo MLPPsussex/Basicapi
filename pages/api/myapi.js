@@ -11,7 +11,7 @@ export default function handler(req, res) {
       res.status(200).json({ message: `You are logged in ${body}` })
   }
   else{
-   res.status(200).json({ message: "!"+data1+"*" })
+   res.status(200).json({ message: data1 })
   }
    
 }
