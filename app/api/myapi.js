@@ -1,5 +1,6 @@
-export default function handler(req, res) {
  var fs = require('fs');
+export default function handler(req, res) {
+
  // const requestMethod = req.method;
   const body = req.body
 //  switch (requestMethod) {
