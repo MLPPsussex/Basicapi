@@ -5,12 +5,12 @@ export default function handler(req, res) {
 //  switch (requestMethod) {
 //   case 'POST':
   
-  const data = fs.readFileSync("mydata.txt")
+  const data1 = fs.readFileSync("mydata.txt")
   if(body=="JEREMY"){
       res.status(200).json({ message: `You are logged in ${body}` })
   }
   else{
-   res.status(200).json({ message: data })
+   res.status(200).json({ message: "!"+data1+"*" })
   }
    
 }
