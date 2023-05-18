@@ -15,8 +15,10 @@ function my(){
  const option = { method: 'GET', }  
  fetch("/api/hello",option )
      .then(response => response.json())
-     .then(response => {ct1.fillText(response.message,170,90)   
-                        ct1.fillText(response.color,100,150) }
+     .then(response => {
+               ct1.fillStyle=response.colour
+               ct1.fillText(response.message,170,90)   
+                         }
                         )
 
 }
