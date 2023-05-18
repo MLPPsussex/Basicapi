@@ -1,14 +1,17 @@
+
 <!DOCTYPE html>
 <html>
-
- <font size="+2">BASIC SIGNIN 8</font>
- <br>
-
- <body>
+<body>
+  <canvas id="canvas"></canvas>
   <script>
-   var name, name2
-   var count=0
-   
+    const c1 = document.getElementById('canvas');
+    const ct1 = c1.getContext('2d');
+
+    // Set canvas dimensions
+    c1.width = 700;
+    c1.height = 900;
+    
+       
 function my(){
  
  const option = {
@@ -19,19 +22,8 @@ function my(){
      .then(response => response.json())
      .then(response => alert(response.message))
 }   
-
-function enter(){
- count++
- if (count>4){return}
- name=prompt("Please Enter Username "+count)
- name2=name.toUpperCase()
- my()
-}
- 
-setTimeout(enter,500)
-setInterval(enter,12000)
-
-
-  </script>
- </body>
-</html>
+    ct1.fillText("Forum",10,60)
+    my()
+    </script>
+  </body>
+ </html>
