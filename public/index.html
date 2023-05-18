@@ -20,9 +20,13 @@ function my(){
    
   fetch("/api/hello",option )
      .then(response => response.json())
-     .then(response => alert(response.message))
+     .then(response => {alert(response.message)
+                        ct1.fillText(response.message,10,120)
+                        }
+          )
 }   
-    ct1.fillText("Forum",10,60)
+    ct1.fillText("Forum2",10,60)
+    
     my()
     </script>
   </body>
