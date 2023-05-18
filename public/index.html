@@ -13,18 +13,13 @@
     
        
 function my(){
- 
- const option = {
-  method: 'GET', 
-}
-   
-  fetch("/api/hello",option )
+ const option = { method: 'GET', }  
+ fetch("/api/hello",option )
      .then(response => response.json())
-     .then(response => {alert(response.message)
-                        ct1.fillText(response.message,10,120)
-                        }
-          )
-}   
+     .then(response => ct1.fillText(response.message,10,120)    )
+
+}
+    
     ct1.fillText("this Forum 7",10,60)
     
     my()
