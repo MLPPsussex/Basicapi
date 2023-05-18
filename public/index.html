@@ -16,11 +16,13 @@ function my(){
  const option = { method: 'GET', }  
  fetch("/api/hello",option )
      .then(response => response.json())
-     .then(response => ct1.fillText(response.message,10,120)    )
+     .then(response => {ct1.fillText(response.message,10,120)   
+                        ct1.fillText(response.color,10,150) }
+                        )
 
 }
     
-    ct1.fillText("this Forum",10,60)
+    ct1.fillText("this Forum 8",10,60)
     
     my()
     </script>
