@@ -4,5 +4,5 @@ var fs = require('fs');
 export async function GET() {
   var msg = fs.readFileSync("mydata.txt")
  
-  return NextResponse.json({ message : msg , color: 'blue'});
+  return NextResponse.json({ message: msg , color: 'blue'});
 }
