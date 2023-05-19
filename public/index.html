@@ -13,7 +13,7 @@ var name=prompt("Enter name")
 var xp,yp
  
 function posi(){
-  ct1.clearRect(0,0,600,600)
+  ct1.clearRect(0,100,600,500)
     navigator.geolocation.getCurrentPosition((position) => {
   yp=position.coords.latitude
   xp=position.coords.longitude
@@ -23,6 +23,7 @@ function posi(){
 }
        
 function my(){
+  /*
  const option = { method: 'GET', }  
  fetch("/test",option )
      .then(response => response.json())
@@ -31,7 +32,15 @@ function my(){
                ct1.fillText(response.message,170,90)   
                          }
                         )
-
+                        */
+ const option = { method: 'loc', }  
+ fetch("/locate",option )
+     .then(response => response.json())
+     .then(response => {
+               ct1
+               ct1.fillText(response.number,170,30)   
+                         }
+                        )
 }
 ct1.font="50px Arial"
 ct1.fillText("Forum3",0,90)
