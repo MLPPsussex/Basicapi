@@ -17,7 +17,8 @@ function posi(){
     navigator.geolocation.getCurrentPosition((position) => {
   yp=position.coords.latitude
   xp=position.coords.longitude
-      ct1.fillText(name+x, 300+x,250+y)
+      ct1.fillText(name, 300+xp,250+yp)
+      ct1.fillText(xp+"/"+yp,0,40)
 });
 }
        
