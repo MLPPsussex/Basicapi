@@ -18,7 +18,7 @@ function posi(){
   yp=position.coords.latitude
   xp=position.coords.longitude
       ct1.fillText(name, 300+xp,250+yp)
-      ct1.fillText(xp+"/"+yp,0,40)
+      ct1.fillText(xp+"/"+yp,200,40)
 });
 }
        
@@ -37,11 +37,11 @@ function my(){
  fetch("/locate",option )
      .then(response => response.json())
      .then(response => {
-               ct1
-               ct1.fillText(response.number,170,30)   
-                         }
-                        )
+               ct1.fillText(response.number,30,30)   
+                         } )
+                        
 }
+           
 ct1.font="50px Arial"
 ct1.fillText("Forum3",0,90)
     my()
