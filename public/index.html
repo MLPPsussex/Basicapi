@@ -9,10 +9,15 @@
     // Set canvas dimensions
     c1.width = 700;
     c1.height = 900;
-    if ("geolocation" in navigator) {
+/*    if ("geolocation" in navigator) {
   alert("geolocation is available") }
-    else {alert("NOT available") }
-}
+    else {alert("NOT")}
+} */
+    
+    navigator.geolocation.getCurrentPosition((position) => {
+  alert(position.coords.latitude);
+});
+
        
 function my(){
  const option = { method: 'GET', }  
