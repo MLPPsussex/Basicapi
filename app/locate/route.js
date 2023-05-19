@@ -1,5 +1,6 @@
 import { kv } from "@vercel/kv";
 
 export default async function loc() {
-  await kv.incr('views')
+  var num=await kv.incr('views')
+  return NextResponse.json({ number: num});
 }
