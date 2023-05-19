@@ -13,7 +13,7 @@
        
 function my(){
  const option = { method: 'GET', }  
- fetch("/api/hello",option )
+ fetch("/test",option )
      .then(response => response.json())
      .then(response => {
                ct1.fillStyle=response.color
@@ -23,7 +23,7 @@ function my(){
 
 }
 ct1.font="50px Arial"
-ct1.fillText("Forum",10,90)
+ct1.fillText("Forum2",10,90)
     my()
     </script>
   </body>
