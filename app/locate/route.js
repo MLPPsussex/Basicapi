@@ -1,7 +1,7 @@
 import { kv } from "@vercel/kv";
 import { NextResponse } from 'next/server';
 
-export default async function GET() {
+export async function GET() {
   var num=await kv.incr('views')
   return NextResponse.json({ nmber: num});
 }
