@@ -3,5 +3,5 @@ import { NextResponse } from 'next/server';
 
 export default async function GET() {
   var num=await kv.incr('views')
-  return NextResponse.json({ number: num});
+  return NextResponse.json({ nmber: num});
 }
