@@ -37,14 +37,14 @@ function my(){
  fetch("/locate",option )
      .then(response => response.json())
      .then(response => {
-               alert(response.number)   
+               alert(response.nmber)   
                          } )
                         
 }
            
 ct1.font="50px Arial"
-ct1.fillText("Forum4",0,90)
-    my()
+ct1.fillText("Forum5",0,90)
+    setTimout(my,2000)
     setTimeout(posi,800)
     setInterval(posi,10000)
     </script>
