@@ -39,11 +39,12 @@ function my(){
      .then(response => {
                ct1.fillText(response.nmber,10,100)   
                          } )
+      .catch(err => {alert('locate err='+err)}); 
                         
 }
            
 ct1.font="50px Arial"
-ct1.fillText("Foru7",0,90)
+ct1.fillText("my Test",0,90)
     setTimeout(my,2000)
     setTimeout(posi,800)
     setInterval(posi,10000)
